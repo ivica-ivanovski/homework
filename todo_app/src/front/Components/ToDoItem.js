@@ -15,9 +15,8 @@ export default class ToDoItem extends HTMLElement{
         this.itemTitle = this.querySelector('.item_title');
 
 
-
-        this.deleteBtn.addEventListener('click',() => this.deleteToDoItem());
-        this.editBtn.addEventListener('click',() => this.editToDoItem());
+        this.deleteBtn.addEventListener('click', () => this.deleteToDoItem());
+        this.editBtn.addEventListener('click', () => this.editToDoItem());
 
         this.idInput.addEventListener('click', (e) => this.markAsDone(e));
 

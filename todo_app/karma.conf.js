@@ -15,7 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'test/to_do_app-spec.js'
+        'test/to_do_app-spec.js',
+        'test/ToDoItem-spec.js'
     ],
 
 
@@ -75,6 +76,7 @@ module.exports = function(config) {
 
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: true,
+      mode: "development",
 
 
     // start these browsers
@@ -90,17 +92,5 @@ module.exports = function(config) {
     // how many browser should be started simultaneous
     concurrency: Infinity,
 
-
-      // webpack: {
-      //     module: {
-      //         loaders: [
-      //             { test: /\.js/, exclude: /node_modules/, loader: 'babel-loader' }
-      //         ]
-      //     },
-      //     watch: true
-      // },
-      // webpackServer: {
-      //     noInfo: true
-      // }
   })
 }
